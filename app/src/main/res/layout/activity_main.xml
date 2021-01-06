@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android = "http://schemas.android.com/apk/res/android"
+    xmlns:app = "http://schemas.android.com/apk/res-auto"
+    xmlns:tools = "http://schemas.android.com/tools"
+    android:layout_width = "match_parent"
+    android:layout_height = "match_parent"
+    tools:context = ".view.MainActivity"
+    android:background="@drawable/pizza_bg_b">
+
+    <EditText
+        android:id="@+id/editText_pizza_flavor"
+        style="@style/MainEditTextStyle"
+        android:layout_width = "match_parent"
+        android:layout_height = "wrap_content"
+        android:hint="@string/pizza_flavor"
+        android:inputType="text"
+        android:singleLine="true"
+        android:imeOptions="actionNext"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="@dimen/margin_standard"
+        android:autofillHints = "Cheese" />
+    <EditText
+        android:id="@+id/editText_pizza_price"
+        style="@style/MainEditTextStyle"
+        android:layout_width = "match_parent"
+        android:layout_height = "wrap_content"
+        android:hint="@string/pizza_price"
+        android:inputType="numberDecimal"
+        android:singleLine="true"
+        android:imeOptions="actionNext"
+        app:layout_constraintTop_toBottomOf="@id/editText_pizza_flavor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_margin="@dimen/margin_standard"
+        android:autofillHints = "0.00" />
+    <EditText
+        android:id="@+id/editText_pizza_calories"
+        style="@style/MainEditTextStyle"
+        android:layout_width = "match_parent"
+        android:layout_height = "wrap_content"
+        android:hint="@string/pizza_calories"
+        android:inputType="number"
+        android:singleLine="true"
+        android:imeOptions="actionNext"
+        app:layout_constraintTop_toBottomOf="@id/editText_pizza_price"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_margin="@dimen/margin_standard"
+        android:autofillHints = "0000" />
+    <EditText
+        android:id="@+id/editText_pizza_url"
+        style="@style/MainEditTextStyle"
+        android:layout_width = "match_parent"
+        android:layout_height = "wrap_content"
+        android:hint="@string/pizza_url"
+        android:inputType="textUri"
+        android:singleLine="true"
+        app:layout_constraintTop_toBottomOf="@id/editText_pizza_calories"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_margin="@dimen/margin_standard"
+        android:autofillHints = "www.google.com" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id = "@+id/button_make_order"
+        style="@style/MainButtonStyle"
+        android:layout_width = "match_parent"
+        android:layout_height = "wrap_content"
+        android:layout_margin="@dimen/margin_standard"
+        android:text = "@string/make_order"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

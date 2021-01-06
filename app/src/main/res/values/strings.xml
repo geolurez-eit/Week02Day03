@@ -1,0 +1,8 @@
+<resources>
+    <string name = "app_name">Week02Day03</string>
+    <string name = "make_order">Make Order</string>
+    <string name = "pizza_url">Pizza URL</string>
+    <string name = "pizza_calories">Pizza Calories</string>
+    <string name = "pizza_price">Pizza Price</string>
+    <string name = "pizza_flavor">Pizza Flavor</string>
+</resources>
